@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * ShopGo
+ *
+ * NOTICE OF LICENSE
+ *
+ * This source file is subject to the Academic Free License (AFL 3.0)
+ * that is bundled with this package in the file LICENSE_AFL.txt.
+ * It is also available through the world-wide-web at this URL:
+ * http://opensource.org/licenses/afl-3.0.php
+ *
+ * @category    Shopgo
+ * @package     Shopgo_AdminSimpleBlocker
+ * @author      Ammar <ammar@shopgo.me>
+ * @copyright   Copyright (c) 2016 ShopGo. (http://www.shopgo.me)
+ * @license     http://opensource.org/licenses/afl-3.0.php  Academic Free License (AFL 3.0)
+ */
+-->
+<config>
+    <modules>
+        <Shopgo_AdminSimpleBlocker>
+            <version>0.1.0</version>
+        </Shopgo_AdminSimpleBlocker>
+    </modules>
+    <global>
+        <helpers>
+            <adminsimpleblocker>
+                <class>Shopgo_AdminSimpleBlocker_Helper</class>
+            </adminsimpleblocker>
+        </helpers>
+        <blocks>
+            <adminhtml>
+                <rewrite>
+                    <page_menu>Shopgo_AdminSimpleBlocker_Block_Adminhtml_Page_Menu</page_menu>
+                </rewrite>
+            </adminhtml>
+        </blocks>
+        <models>
+            <admin>
+                <rewrite>
+                    <session>Shopgo_AdminSimpleBlocker_Model_Admin_Session</session>
+                </rewrite>
+            </admin>
+        </models>
+    </global>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <shopgo_adminsimpleblocker before="Mage_Adminhtml">Shopgo_AdminSimpleBlocker_Adminhtml</shopgo_adminsimpleblocker>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>
+

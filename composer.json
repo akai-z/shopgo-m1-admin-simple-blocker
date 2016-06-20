@@ -1,0 +1,22 @@
+{
+    "name": "shopgo/admin-simple-blocker",
+    "type": "magento-module",
+    "license": [
+        "OSL-3.0",
+        "AFL-3.0"
+    ],
+    "description": "A simple Magento 1 extension that blocks some parts of admin panel",
+    "require": {
+        "magento-hackathon/magento-composer-installer": "*"
+    },
+    "authors":[
+        {
+            "name": "Ammar",
+            "email": "ammar@shopgo.me"
+        },
+        {
+            "name": "ShopGo",
+            "email": "support@shopgo.me"
+        }
+    ]
+}
