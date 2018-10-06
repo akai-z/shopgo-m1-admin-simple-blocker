@@ -1,4 +1,4 @@
-# Admin Simple Blocker #
+# Admin Simple Blocker `[UNMAINTAINED]` #
 
 ### About Repository ###
 
